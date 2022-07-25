@@ -1,0 +1,110 @@
+:root{
+    --light_gray : hsl(0, 0%, 90%);
+    --grayish_red: hsl(0, 5%, 81%);
+    --very_light_gray: hsl(0, 0%, 93%);
+    --dark_moderate_cyan: hsl(185, 42%, 37%);
+    --very_dark_cyan: hsl(185, 58%, 25%);
+    --orange: hsl(25, 98%, 40%);
+    --dark_orange: hsl(25, 99%, 27%);
+    --light_grayish_yellow: hsl(45, 7%, 89%);
+    --dark_grayish_orange: hsl(35, 11%, 61%);
+    --very_dark_grayish_yellow: hsl(60, 10%, 19%);
+    --white: hsl(100, 0%, 100%);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    background-color: var(--light_gray);
+    align-items:center;
+    justify-content: center;
+}
+
+.container{
+    width: 385px;
+    border-radius: 15px;
+    overflow: hidden; 
+
+}
+
+.display_outcome{
+    display:flex; 
+    background-color: var(--white);
+    height: 100px;
+    justify-content: end; 
+    align-items: center;
+    padding-right: 20px;
+    border-radius: 15px;
+    margin-bottom:15px;   
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
+    background-color: var(--grayish_red); 
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;   
+
+}
+
+.button{
+    background-color: var(--light_grayish_yellow);
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 69px;
+    border-radius: 10px;
+    padding-top: 5px;
+    box-shadow: 0 3px var(--dark_grayish_orange);
+    border-radius: 15px;
+    overflow: hidden; 
+}
+
+.green{
+    background-color: var(--dark_moderate_cyan);
+    color: white;
+    font-size: 24px; 
+    box-shadow:  0 3px var(--very_dark_cyan);
+    padding-top: 8px; 
+}
+
+.button2{
+    margin-top: 20px;
+    grid-column: 1 / span 2;
+    background-color: var(--dark_moderate_cyan);
+    border-radius: 15px;
+    box-shadow:  0 3px var(--very_dark_cyan);
+    margin-bottom: 20px;
+    font-size: 24px; 
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    text-align: center; 
+    color:var(--white);
+    margin-left: 20px;   
+}
+
+.button3{
+    margin-top: 20px;
+    grid-column: 3 / span 2;
+    background-color: var(--orange);
+    border-radius: 15px;
+    box-shadow:  0 3px var(--dark_orange);
+    margin-bottom: 20px;
+    font-size: 24px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;  
+    text-align: center; 
+    color:var(--white);  
+}
+
