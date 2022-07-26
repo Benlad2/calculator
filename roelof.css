@@ -30,44 +30,40 @@ body{
 }
 
 .container{
-    width: 385px;
-    border-radius: 15px;
-    overflow: hidden; 
-
+    max-width: 385px;
+    border-radius: 15px; 
 }
 
 .display_outcome{
     display:flex; 
     background-color: var(--white);
-    height: 100px;
     justify-content: end; 
     align-items: center;
-    padding-right: 20px;
     border-radius: 15px;
-    margin-bottom:15px;   
+    padding: 1.5rem;
+    margin-bottom: 1rem;  
 }
 
 .buttons{
     display: grid;
     grid-template-columns: 1fr  1fr 1fr 1fr;
     background-color: var(--grayish_red); 
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;   
-
+    border-radius: 15px;
+    gap: 1rem;
+    padding: clamp(0.5rem, 5vw, 2rem);   
 }
 
 .button{
     background-color: var(--light_grayish_yellow);
     text-align: center;
-    margin-top: 25px;
-    margin-left: 15px;
-    width: 69px;
-    border-radius: 10px;
-    padding-top: 5px;
     box-shadow: 0 3px var(--dark_grayish_orange);
     border-radius: 15px;
-    overflow: hidden; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding: 0.25em;
+    justify-content: center; 
 }
 
 .green{
@@ -75,7 +71,6 @@ body{
     color: white;
     font-size: 24px; 
     box-shadow:  0 3px var(--very_dark_cyan);
-    padding-top: 8px; 
 }
 
 .button2{
@@ -94,17 +89,12 @@ body{
 }
 
 .button3{
-    margin-top: 20px;
     grid-column: 3 / span 2;
     background-color: var(--orange);
     border-radius: 15px;
     box-shadow:  0 3px var(--dark_orange);
-    margin-bottom: 20px;
     font-size: 24px; 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 20px;  
     text-align: center; 
-    color:var(--white);  
+    color:var(--white);
 }
 
