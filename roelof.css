@@ -73,28 +73,28 @@ body{
     box-shadow:  0 3px var(--very_dark_cyan);
 }
 
-.button2{
-    margin-top: 20px;
-    grid-column: 1 / span 2;
-    background-color: var(--dark_moderate_cyan);
-    border-radius: 15px;
-    box-shadow:  0 3px var(--very_dark_cyan);
-    margin-bottom: 20px;
+.button_large {
     font-size: 24px; 
-    padding-top: 10px;
-    padding-bottom: 10px; 
     text-align: center; 
     color:var(--white);
-    margin-left: 20px;   
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding: 0.25em;
+    justify-content: center;
 }
 
-.button3{
+.red{
     grid-column: 3 / span 2;
     background-color: var(--orange);
     border-radius: 15px;
     box-shadow:  0 3px var(--dark_orange);
-    font-size: 24px; 
-    text-align: center; 
-    color:var(--white);
+}
+
+.green_large{
+    grid-column: 1 / span 2;
+    background-color: var(--dark_moderate_cyan);
+    border-radius: 15px;
+    box-shadow:  0 3px var(--very_dark_cyan);
 }
 
